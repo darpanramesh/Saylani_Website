@@ -1,0 +1,48 @@
+.mid{
+    border: 1px solid rgba(0, 0, 0,0.1);
+    float: left;
+    padding: 20px;
+    width: 750px;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+#button1 a{
+    color: white;
+    text-decoration: none;
+}
+.img-margn{
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.january{
+    background-color: red;
+    padding: 0px 6px 1px 2px;
+    color: white;
+}
+.span2{
+    margin-left: 5px;
+    background-color: #a8e000;
+    padding: 0px 6px 1px 2px;
+    color: white;
+}
+#div7{
+    margin-left: 100px;
+}
+#img-entry{
+    margin-left: 30px;
+}
+.post_views {
+    background: url(images/view_icon.png) no-repeat left 50% #444;
+    display: inline-block;
+    margin: 0px 0px 0px -2px;
+    color: #fff;
+    font-size: 11px;
+    margin-left: 5px;
+    line-height: 16px;
+    padding: 2px 6px 1px 21px!important;
+}
+#imgline{
+    margin-top: -125px;
+    width: 1350px;
+    margin-left: -18px;
+}

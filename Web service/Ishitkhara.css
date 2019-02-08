@@ -1,0 +1,16 @@
+.mid{
+    border: 1px solid rgba(0, 0, 0,0.1);
+    float: left;
+    padding: 20px;
+    width: 1250px;
+    margin-left: 50px;
+    margin-top: 80px;
+}
+#underline{
+    opacity: 0.1;
+}
+#imgline{
+    margin-top: -125px;
+    width: 1350px;
+    margin-left: -18px;
+}
