@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+<style>
+
+body{
+    background-image: url(bg.jpg);
+}
+#h1{
+    color:lightgray;
+    margin-left: 20%;
+    font-size: 100px;
+}
+#text{
+    padding: 13px;
+    margin-left: 40%;
+    margin-top: 5%;
+    border-radius: 20px;
+}
+#button{
+    padding: 13px;
+    background: black;
+    color: white;
+    border-radius: 20px;
+    margin-left: 0.2%;
+}
+#button:hover{
+    background-color: transparent;
+    color: white;
+}
+#list{
+    margin-left: 45%;
+    margin-top: 1%;
+    color: white;
+    font-size: 35px;
+}
+
+
+</style>
+
+</head>
+<body>
+    
+</body>
+<script>
+
+    var h1 = document.createElement("h1");
+    var txt = document.createTextNode("TO DO Assignment");
+    h1.setAttribute("id", "h1");
+    h1.appendChild(txt);
+    document.body.appendChild(h1);
+
+var input = document.createElement("input");
+input.setAttribute("type", "text");
+input.setAttribute("id", "text");
+input.setAttribute("placeholder", "Enter any value");
+document.body.appendChild(input);
+
+var button = document.createElement("button");
+button.setAttribute("onClick", "func()");
+button.setAttribute("id", "button");
+var value = document.createTextNode("Click here");
+button.appendChild(value);
+document.body.appendChild(button);
+
+
+function func(){
+
+    // var bt = document.getElementById("button");
+    // var cssprop = window.getComputedStyle(bt, null).getPropertyValue("color");
+    // console.log(cssprop);
+
+    var li = document.createElement("li");
+    li.setAttribute("id", "list");
+
+    var node = document.createTextNode(document.getElementById("text").value);
+    li.appendChild(node);
+    document.body.appendChild(li);
+
+    var btn1 = document.createElement("input");
+    btn1.setAttribute("type", "button");
+    btn1.setAttribute("id", "btn1");
+    btn1.setAttribute("value", "edit");
+    btn1.setAttribute("onclick","btn1()");
+    li.appendChild(btn1);
+
+    var btn2 = document.createElement("input");
+    btn2.setAttribute("type", "button");
+    btn2.setAttribute("id", "btn2");
+    btn2.setAttribute("onclick", "btn2()");
+    btn2.setAttribute("value", "Delete");
+    li.appendChild(btn2);
+
+    var val = document.getElementById("text").value = "";
+
+    document.body.style.backgroundImage = "url('download.jpg')"
+
+}
+var node1 = document.createTextNode(document.getElementById("text").value);
+    function btn1(){
+        var edit = prompt("Edit your value", node1);
+        
+    }
+
+    function btn2(){
+        var dlt = document.getElementById("list").innerHTML = "";
+    }
+
+
+
+
+
+
+
+</script>
+
+</html>
